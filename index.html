@@ -28,6 +28,7 @@
         font-weight : bold;
         font-family: cursive;
         text-align: center;
+        text-shadow : 1px 1px #000;
       }
       
     </style>
@@ -53,7 +54,10 @@
    document.addEventListener('click',musplay);
     
     
-    
+    let nama = document.createElement('div');
+      nama.textContent = "Ayu Lestari";
+      nama.setAttribute("class","animated fadeIn delay-5s");
+      nama.setAttribute("style","font-size : 36px");
     
     
     
@@ -139,6 +143,7 @@
         
         content.appendChild(mksh);
         content.appendChild(istri);
+        content.appendChild(nama);
       }, 19000);
       
       
