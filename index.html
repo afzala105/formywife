@@ -35,7 +35,7 @@
     
   </head>
   <body>
-    <audio style="" id="musik" controls autoplay>
+    <audio style="display: none;" id="musik" controls autoplay>
       <source src="./backsound.mp3" type="audio/mpeg" />
     </audio>
     <section id="content" style="" class="container">
@@ -46,9 +46,11 @@
     
     <script>
     let musik = document.getElementById('musik').autoplay;
-    //musik.load();
+    function musplay(){
+      musik.play();
+      }
     
-  
+   document.addEventListener('click',musplay);
     
     
     
