@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title>For My Wife</title>
+    
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./animate.min.css" />
+    
+    <style>
+      #content{
+        height: 100vh;
+        background-image : url('whiteFlower.jpg');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size : cover;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      div {
+        font-size : 24px;
+        color : #fff;
+        font-weight : bold;
+        font-family: cursive;
+        text-align: center;
+      }
+      
+    </style>
+    
+    
+  </head>
+  <body>
+    <audio style="display:none;" id="musik" controls autoplay>
+      <source src="./backsound.mp3" type="audio/mpeg" />
+    </audio>
+    <section id="content" style="" class="container">
+      
+      
+      
+    </section>
+    
+    <script>
+    let musik = document.getElementById('musik').autoplay;
+    //musik.load();
+    
+  
+    
+    
+    
+    
+    
+    
+      let content = document.getElementById('content');
+      
+      //awalan
+      let intro = document.createElement('div');
+      intro.textContent = "Teruntuk kamu";
+      intro.setAttribute("class","animated fadeIn delay-1s");
+      //console.log(intro);
+      
+      //pembuka
+      let buka = document.createElement('div');
+      buka.textContent = "Semoga dikau selalu tersenyum";
+      buka.setAttribute("class", "animated fadeIn delay-3s");
+      
+      //harap
+      let harap = document.createElement('div');
+      harap.textContent = "Senyum indah yang menghapus lelahku";
+      harap.setAttribute("class","animated fadeIn delay-5s");
+      
+      //syukur
+      let syukur = document.createElement('div');
+      syukur.textContent = "Setiap hari selalu indah bersamamu";
+      syukur.setAttribute("class","animated fadeIn delay-1s");
+      
+      //tapi
+      let tapi = document.createElement('div');
+      tapi.textContent = "Meski perselisihan terkadang datang";
+      tapi.setAttribute("class","animated fadeIn delay-1s");
+      
+      //solusi
+      let solusi = document.createElement('div');
+      solusi.textContent = "Namun, dikau tetap sabar menerimaku";
+      solusi.setAttribute("class", "animated fadeIn delay-3s");
+      
+      //hasil
+      let hasil = document.createElement('div');
+      hasil.textContent = "Aku selalu bersyukur memilikimu";
+      hasil.setAttribute("class","animated fadeIn delay-3s");
+      
+      //mksh
+      let mksh = document.createElement('div');
+      mksh.textContent = "I love you";
+      mksh.setAttribute("class","animated fadeIn delay-1s");
+      
+      let istri = document.createElement('div');
+      istri.textContent = "Istriku";
+      istri.setAttribute("class","animated fadeIn delay-3s");
+      
+      content.appendChild(intro);
+      content.appendChild(buka);
+      content.appendChild(harap);
+      
+      setTimeout(()=>{
+        content.removeChild(intro);
+        content.removeChild(buka);
+        content.removeChild(harap);
+        
+        content.style.backgroundImage = "url('./whiteFlow2.jpg')";
+        
+        content.appendChild(tapi);
+        content.appendChild(solusi);
+        
+      }, 7500);
+      
+      setTimeout(()=>{
+        content.removeChild(tapi);
+        content.removeChild(solusi);
+        
+        content.style.backgroundImage = "url('./together.jpg')";
+        
+        content.appendChild(syukur);
+        content.appendChild(hasil);
+        
+      }, 14000);
+      
+      setTimeout(()=>{
+        content.removeChild(syukur);
+        content.removeChild(hasil);
+        
+        content.style.backgroundImage = "url('./love.jpg')";
+        
+        content.appendChild(mksh);
+        content.appendChild(istri);
+      }, 19000);
+      
+      
+      
+    </script>
+    
+  </body>
+</html>
